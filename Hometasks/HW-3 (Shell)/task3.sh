@@ -2,5 +2,5 @@
 if [ -z "$(ps -A | grep httpd)" ]
 then
 	httpd
-	echo "$(date  +%Y-%m-%d\ %H:%M:%S) httpd was not running, starting..."
+	echo "$(date  +%Y-%m-%d\ %H:%M:%S) httpd was not running, starting..."  >> ~/httpd_start.log
 fi
